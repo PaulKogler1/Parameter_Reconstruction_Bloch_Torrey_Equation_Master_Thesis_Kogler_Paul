@@ -1,6 +1,10 @@
 # Parameter_Reconstruction_Bloch_Torrey_Master_Thesis
 Code implementations of algorithms developed in the master thesis "Reconstruction methodology for MRI based on the Bloch-Torrey equation".
 
+The File Bloch_Torrey_Solver.py provides a numerical solver for the Bloch-Torrey equation in the rotating frame, where the solution is saved in a File
+The functions $T_1$, $T_2$, $M^{eq}$ and $B$ are required to be symbolic expressions.
+
+
 
 # Third-Party Libraries:
 The following open source libraries are used in this project:
