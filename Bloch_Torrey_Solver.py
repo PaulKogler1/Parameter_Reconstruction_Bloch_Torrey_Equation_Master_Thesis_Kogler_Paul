@@ -268,7 +268,7 @@ def M_0_expression(x):      #The eqilibrium Magnetization
     values = np.zeros((3, x.shape[1])) #set all values to 0
     values[0] = 0     #it is already 0 but we write it for readability
     values[1] = 0.00324 *300* x[0]*(1 - x[0])  * x[1]*(1 - x[1])* x[2]*(1 - x[2])   #this satisfies that we are zero on the boundary
-    values[2] = 0   #Assume at first that it  is constant one like the equilibrium magnetization
+    values[2] = 0  
     return values
 
 
@@ -281,9 +281,9 @@ B_function_class_regularity = 1
 def B_expression(x,t):
     z_direction_field = 1 #This is the constant strong field in the z-direction
     values = np.zeros((3, x.shape[1]))
-    values[0] = 0   #  + 0.000000001 * np.cos(5 * t)*(1/(10*t + 1))
+    values[0] = 0  
     values[1] = 0
-    values[2] = 1  - z_direction_field   #+ 0.04*t*(0.2 - x[0])*(0.2 - x[1])*(0.2 - x[2])
+    values[2] = 1  - z_direction_field   
     return values
 
 
