@@ -2,9 +2,8 @@
 Code implementations of algorithms developed in the master thesis "Reconstruction methodology for MRI based on the Bloch-Torrey equation".
 
 The File Bloch_Torrey_Solver.py provides a numerical solver for the Bloch-Torrey equation in the rotating frame, where the solution is saved in a File solution.xdmf.
-An example is provided in the file too.
 
-The functions $T_1$, $T_2$, $M^{eq}$ and $B$ in the Bloch-Torrey equation are required to be symbolic expressions.
+The functions $T_1$, $T_2$, $M^{eq}$ and $B$ in the Bloch-Torrey equation are required to be symbolic expressions. An example is provided in the file too.
 
 The code is fully parallelized using MPI and can be executed on multiple processors.  
 To run the simulation in parallel, use:
